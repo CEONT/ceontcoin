@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEOn't — $CEONT</title>
+<meta name="description" content="CEOn't — No Job. Still CEO.">
+<meta property="og:title" content="CEOn't — $CEONT">
+<meta property="og:description" content="CEO? CEOn't. No Job. Still CEO.">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#090909; --panel:#111111; --text:#f4f4f0; --muted:#a7a7a0;
+  --red:#ff2d2d; --line:#242424; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-weight:900;font-size:25px;letter-spacing:-1.5px}
+.brand span{color:var(--red)}
+.navlinks{display:flex;gap:26px;color:#cfcfc9;font-size:14px}
+.navlinks a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:800;border:1px solid var(--line)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn.dark{background:#151515}
+.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:70px 0}
+.kicker{color:var(--red);font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(64px,10vw,128px);line-height:.82;letter-spacing:-7px;margin:16px 0 22px}
+h1 em{font-style:normal;color:var(--red)}
+.tagline{font-size:clamp(22px,3vw,34px);font-weight:800;margin:0 0 15px}
+.sub{color:var(--muted);font-size:17px;line-height:1.7;max-width:560px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.heroimg{width:100%;border-radius:22px;border:1px solid #292929;box-shadow:0 25px 80px rgba(0,0,0,.5)}
+.section{padding:100px 0;border-top:1px solid var(--line)}
+.section h2{font-size:clamp(40px,6vw,72px);letter-spacing:-3px;margin:0 0 15px}
+.section p.lead{color:var(--muted);font-size:18px;line-height:1.7;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card .big{font-size:38px;font-weight:900;margin-bottom:12px}
+.card p{color:var(--muted);line-height:1.65;margin:0}
+.manifesto{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}
+.manifesto .quote{background:#f2f2ed;color:#0b0b0b;border-radius:20px;padding:38px;font-size:clamp(28px,4vw,52px);font-weight:900;letter-spacing:-2px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:35px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:20px;background:#0d0d0d}
+.stat b{display:block;font-size:28px}.stat span{color:var(--muted);font-size:13px}
+footer{padding:45px 0;color:#777;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.disclaimer{font-size:12px;color:#666;line-height:1.6;max-width:760px}
+@media(max-width:800px){
+  .navlinks{display:none}.hero{grid-template-columns:1fr;padding:45px 0}.heroimg{max-height:600px;object-fit:cover}
+  .grid,.manifesto,.stats{grid-template-columns:1fr}
+  h1{letter-spacing:-4px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<nav>
+  <a class="brand" href="#">CEO<span>n’t</span></a>
+  <div class="navlinks">
+    <a href="#story">Story</a><a href="#company">Company</a><a href="#community">Community</a>
+  </div>
+  <a class="btn red" href="https://x.com/" target="_blank" rel="noopener">Follow on X</a>
+</nav>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="kicker">$CEONT · Unemployed CEO</div>
+    <h1>CEO?<br><em>CEOn’t.</em></h1>
+    <p class="tagline">NO JOB. STILL CEO.</p>
+    <p class="sub">Welcome to CEOn’t Inc. The company with zero employees, zero revenue and one extremely confident CEO.</p>
+    <div class="actions">
+      <a class="btn red" href="#story">Meet the CEO</a>
+      <a class="btn dark" href="https://x.com/" target="_blank" rel="noopener">X / Twitter</a>
+    </div>
+  </div>
+  <div><img class="heroimg" src="ceont-ceo.png" alt="The CEOn't unemployed CEO mascot"></div>
+</section>
+
+<section class="section" id="story">
+  <div class="kicker">The business plan</div>
+  <h2>Somehow, we're the CEO.</h2>
+  <p class="lead">CEOn’t is a character-driven meme brand built around one simple corporate contradiction: the CEO has no job, no company and no revenue — but absolutely no intention of giving up the title.</p>
+  <div class="grid">
+    <div class="card"><div class="big">$0</div><p>Revenue. The quarterly report is looking fantastic.</p></div>
+    <div class="card"><div class="big">0</div><p>Employees. Everyone is too busy being CEO.</p></div>
+    <div class="card"><div class="big">100%</div><p>CEO confidence. Evidence not required.</p></div>
+  </div>
+</section>
+
+<section class="section" id="company">
+  <div class="kicker">CEOn’t Inc.</div>
+  <h2>Corporate excellence.<br>Absolutely no work.</h2>
+  <div class="manifesto">
+    <div class="quote">“Why get a job when you can become the CEO?”</div>
+    <div class="card">
+      <p style="font-size:20px;color:#eee;margin-bottom:20px;font-weight:800">Quarterly results</p>
+      <p>Office: Bedroom<br>Salary: $0<br>Meetings: Cancelled<br>Strategy: Memes<br>Job application: Rejected<br>CEO status: Unchanged</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="community">
+  <div class="kicker">Join the company</div>
+  <h2>Everyone gets promoted.</h2>
+  <p class="lead">CEOn’t is built for internet culture: short jokes, recurring characters, absurd corporate updates and community participation.</p>
+  <div class="stats">
+    <div class="stat"><b>CEO</b><span>Default title</span></div>
+    <div class="stat"><b>0–5</b><span>Employees expected</span></div>
+    <div class="stat"><b>24/7</b><span>CEO confidence</span></div>
+    <div class="stat"><b>$CEONT</b><span>Project ticker</span></div>
+  </div>
+  <div class="actions" style="margin-top:32px">
+    <a class="btn red" href="https://x.com/" target="_blank" rel="noopener">Join us on X</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><strong>CEOn’t</strong> · $CEONT</div>
+  <div class="disclaimer">CEOn’t is a meme project. Nothing on this website is financial, investment or legal advice. Token launch details should be verified from the official contract address and official channels before any transaction.</div>
+</footer>
+</div>
+</body>
+</html>
